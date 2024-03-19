@@ -3,22 +3,22 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 2em 0;
   min-height: 100vh;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
+.header {
+  display: block;
+  min-height: 64px;
+  padding: 2em 0;
+  text-align: center;
+  letter-spacing: -0.02em;
+  font-size: 1.15rem;
   max-width: var(--max-width);
-  width: 100%;
   z-index: 2;
-  font-family: var(--font-mono);
 }
 
-.description a {
+.header a {
   display: inline;
   font-size: 1em;
   justify-content: center;
@@ -26,43 +26,38 @@
   gap: 0.5rem;
 }
 
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.header :global(a.active) {
+  color: #0070f3;
+  font-weight: 600;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+
+.footer {
+  display: inherit;
+  align-items: center;
   max-width: var(--max-width);
-  width: 100%;
+  width: 40;
+  z-index: 2;
 }
 
 .card {
-  padding: 1rem 1.2rem;
+  padding: 0.85rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
+  border: 4px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
 }
 
 .card span {
-  display: inline-block;
+  display: inline;
   transition: transform 200ms;
 }
 
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(25%, auto));
+  max-width: var(--max-width);
+  width: 50%;
 }
 
 .center {
@@ -97,9 +92,6 @@
   transform: translateZ(0);
 }
 
-.logo {
-  position: relative;
-}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -148,23 +140,23 @@
     height: 300px;
   }
 
-  .description {
+  .header {
     font-size: 0.8rem;
   }
 
-  .description a {
+  .header a {
     padding: 1rem;
   }
 
-  .description p,
-  .description div {
+  .header p,
+  .header div {
     display: flex;
     justify-content: center;
     position: fixed;
     width: 100%;
   }
 
-  .description p {
+  .header p {
     align-items: center;
     inset: 0 0 auto;
     padding: 2rem 1rem 1.4rem;
@@ -180,7 +172,7 @@
     backdrop-filter: blur(24px);
   }
 
-  .description div {
+  .header div {
     align-items: flex-end;
     pointer-events: none;
     inset: auto 0 0;
@@ -199,16 +191,6 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 

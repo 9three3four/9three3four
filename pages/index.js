@@ -14,92 +14,78 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <a
-            href="/"
-            rel="noopener noreferrer"
-          >
-            9three3four
+        <div className={styles.header}>
+          <a href="/" rel="noopener noreferrer" className={styles.card}>
+            Home
           </a>
-          <div>
-            <a href="/about.js" rel="noopener noreferrer">
-              About
-            </a>
-            <a href="/blog.js" rel="noopener noreferrer">
-              Blog
-            </a>
-          </div>
+          <a href="/about.js" rel="noopener noreferrer" className={styles.card}>
+            About
+          </a>
+          <a href="/blog.js" rel="noopener noreferrer" className={styles.card}>
+            Blog
+          </a>
+          <a href="/cv_lanka.pdf" rel="noopener noreferrer" className={styles.card}>
+            CV
+          </a>
         </div>
 
         <div className={styles.center}>
           <h1> Heyo! </h1>
         </div>
 
-        <div className={styles.description}>
+        <div className={styles.footer}>
           <a
               href="https://www.github.com/9three3four"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
+              className={styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
           >
             <Image
                 src="/images/github.svg"
                 alt="GitHub Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
+                width={23}
+                height={23}
             />
 
           </a>
-
           <a
-            href="https://www.linkedin.com/in/9three3four"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/9three3four"
+              className={styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
           >
             <Image
                 src="/images/linkedin.svg"
                 alt="LinkedIn Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
+                width={23}
+                height={23}
             />
           </a>
           <a
-            href="https://www.instagram.com/9three3four"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
+              href="https://www.instagram.com/9three3four"
+              className={styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
           >
             <Image
                 src="/images/instagram.svg"
                 alt="Instagram Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
+                width={23}
+                height={23}
             />
-
           </a>
-
           <a
-            href="mailto:lanka.kv@icloud.com"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
+              href="mailto:lanka.kv@icloud.com"
+              className={styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
           >
             <Image
                 src="/images/envelope.svg"
                 alt="Mail Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
+                width={23}
+                height={23}
             />
-
           </a>
         </div>
       </main>
