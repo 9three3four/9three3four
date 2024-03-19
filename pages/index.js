@@ -18,9 +18,6 @@ export default function Home() {
           <a href="/" rel="noopener noreferrer" className={styles.card}>
             Home
           </a>
-          <a href="/about.js" rel="noopener noreferrer" className={styles.card}>
-            About
-          </a>
           <a href="/blog.js" rel="noopener noreferrer" className={styles.card}>
             Blog
           </a>
@@ -43,6 +40,7 @@ export default function Home() {
             <Image
                 src="/images/github.svg"
                 alt="GitHub Logo"
+                className={styles.logo}
                 width={23}
                 height={23}
             />
@@ -57,6 +55,7 @@ export default function Home() {
             <Image
                 src="/images/linkedin.svg"
                 alt="LinkedIn Logo"
+                className={styles.logo}
                 width={23}
                 height={23}
             />
@@ -70,6 +69,7 @@ export default function Home() {
             <Image
                 src="/images/instagram.svg"
                 alt="Instagram Logo"
+                className={styles.logo}
                 width={23}
                 height={23}
             />
@@ -83,6 +83,7 @@ export default function Home() {
             <Image
                 src="/images/envelope.svg"
                 alt="Mail Logo"
+                className={styles.logo}
                 width={23}
                 height={23}
             />

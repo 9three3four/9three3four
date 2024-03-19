@@ -8,9 +8,9 @@
 }
 
 .header {
-  display: block;
+  display: flex;
   min-height: 64px;
-  padding: 2em 0;
+  padding: 1em 0;
   text-align: center;
   letter-spacing: -0.02em;
   font-size: 1.15rem;
@@ -26,14 +26,8 @@
   gap: 0.5rem;
 }
 
-.header :global(a.active) {
-  color: #0070f3;
-  font-weight: 600;
-}
-
-
 .footer {
-  display: inherit;
+  display: flex;
   align-items: center;
   max-width: var(--max-width);
   width: 40;
@@ -41,7 +35,7 @@
 }
 
 .card {
-  padding: 0.85rem;
+  padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 4px solid rgba(var(--card-border-rgb), 0);
@@ -49,7 +43,7 @@
 }
 
 .card span {
-  display: inline;
+  display: inline-block;
   transition: transform 200ms;
 }
 
@@ -90,6 +84,12 @@
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert(1);
+  }
 }
 
 /* Enable hover only on non-touch devices */
