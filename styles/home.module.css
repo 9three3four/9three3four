@@ -8,29 +8,41 @@
 }
 
 .header {
-  display: flex;
+  display: inline-flex;
+  justify-content: ;
   min-height: 64px;
-  padding: 1em 0;
-  text-align: center;
+  padding: 0.2em 0;
   letter-spacing: -0.02em;
   font-size: 1.15rem;
+  font-weight: 500;
   max-width: var(--max-width);
   z-index: 2;
 }
 
 .header a {
-  display: inline;
+  display: inline-flex;
   font-size: 1em;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1em;
 }
 
+
 .footer {
-  display: flex;
+ display: inline-flex;
+  gap: 1em;
+  justify-content: center;
+
+  width: 100%;
+  z-index: 2;
+}
+
+.footer p{
+
+  position: fixed;
   align-items: center;
-  max-width: var(--max-width);
-  width: 40;
+  bottom: 0;
+  width: 50%;
   z-index: 2;
 }
 
@@ -55,17 +67,18 @@
 }
 
 .center {
-  display: flex;
+  display: inline-grid;
+  font-size: ;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .center::before {
   background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
+  border-radius: 100%;
+  width: 360px;
   height: 360px;
   margin-left: -400px;
 }
@@ -96,7 +109,7 @@
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    border: 0.5px solid rgba(var(--card-border-rgb), 0.15);
   }
 
   .card:hover span {

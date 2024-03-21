@@ -27,10 +27,12 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <h1> Heyo! </h1>
+          <h1> Chandrakanth Lanka </h1>
+          <h2>Senior DevOps Engineer</h2>
         </div>
 
         <div className={styles.footer}>
+
           <a
               href="https://www.github.com/9three3four"
               className={styles.card}
@@ -88,6 +90,18 @@ export default function Home() {
                 height={23}
             />
           </a>
+
+
+
+            <p>  <Image
+                src="/images/c-circle.svg"
+                alt="Copyright Logo"
+                className={styles.logo}
+                width={13}
+                height={13}
+            />
+              Copyright 2024 - Developed by Lanka.</p>
+
         </div>
       </main>
     </>
