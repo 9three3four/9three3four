@@ -9,39 +9,33 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>9three3four</title>
         <meta name="description" content="My personal site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.header}>
-          <a href="/" rel="noopener noreferrer" className={styles.card}>
-            Home
-          </a>
-          <a href="/blog.js" rel="noopener noreferrer" className={styles.card}>
-            Blog
-          </a>
-          <a href="/cv_lanka.pdf" rel="noopener noreferrer" className={styles.card}>
-            CV
-          </a>
-        </div>
 
-        <div className={styles.center}>
-          <h1> Chandrakanth Lanka </h1>
-          <h2>Senior DevOps Engineer</h2>
+        <div className={styles.title}>
+          <h1> Chandrakanth Lanka</h1>
+          <h3> DevOps Engineer</h3>
         </div>
+          <p>
+            I'm a Senior DevOps Engineer at Ness Digital Engineering with 7 years of experience,
+            driven by a passion to leverage technology for positive change.
+            I bridge the gap between development and operations, ensuring smooth software delivery.
+          </p>
+          <p>
+            Beyond the technical realm, I'm fascinated by the intersection of data science and economics,
+            constantly seeking ways to utilize these fields to make a real-world impact.
+          </p>
 
         <div className={styles.footer}>
-
           <a
               href="https://www.github.com/9three3four"
-              className={styles.card}
               target="_blank"
               rel="noopener noreferrer"
           >
             <Image
-                src="/images/github.svg"
-                alt="GitHub Logo"
+                src="/images/github.svg"s
                 className={styles.logo}
                 width={23}
                 height={23}
@@ -50,13 +44,11 @@ export default function Home() {
           </a>
           <a
               href="https://www.linkedin.com/in/9three3four"
-              className={styles.card}
               target="_blank"
               rel="noopener noreferrer"
           >
             <Image
                 src="/images/linkedin.svg"
-                alt="LinkedIn Logo"
                 className={styles.logo}
                 width={23}
                 height={23}
@@ -64,13 +56,11 @@ export default function Home() {
           </a>
           <a
               href="https://www.instagram.com/9three3four"
-              className={styles.card}
               target="_blank"
               rel="noopener noreferrer"
           >
             <Image
                 src="/images/instagram.svg"
-                alt="Instagram Logo"
                 className={styles.logo}
                 width={23}
                 height={23}
@@ -78,30 +68,16 @@ export default function Home() {
           </a>
           <a
               href="mailto:lanka.kv@icloud.com"
-              className={styles.card}
               target="_blank"
               rel="noopener noreferrer"
           >
             <Image
                 src="/images/envelope.svg"
-                alt="Mail Logo"
                 className={styles.logo}
                 width={23}
                 height={23}
             />
           </a>
-
-
-
-            <p>  <Image
-                src="/images/c-circle.svg"
-                alt="Copyright Logo"
-                className={styles.logo}
-                width={13}
-                height={13}
-            />
-              Copyright 2024 - Developed by Lanka.</p>
-
         </div>
       </main>
     </>
