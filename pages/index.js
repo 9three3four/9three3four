@@ -19,12 +19,12 @@ export default function Home() {
           <h3> DevOps Engineer</h3>
         </div>
           <p>
-            I'm a Senior DevOps Engineer at Ness Digital Engineering with 7 years of experience,
+            I am a Senior DevOps Engineer at Ness Digital Engineering with 7 years of experience,
             driven by a passion to leverage technology for positive change.
             I bridge the gap between development and operations, ensuring smooth software delivery.
           </p>
           <p>
-            Beyond the technical realm, I'm fascinated by the intersection of data science and economics,
+            Beyond the technical realm, I am fascinated by the intersection of data science and economics,
             constantly seeking ways to utilize these fields to make a real-world impact.
           </p>
 
@@ -35,7 +35,8 @@ export default function Home() {
               rel="noopener noreferrer"
           >
             <Image
-                src="/images/github.svg"s
+                src="/images/github.svg"
+                alt="github logo"
                 className={styles.logo}
                 width={23}
                 height={23}
@@ -49,6 +50,7 @@ export default function Home() {
           >
             <Image
                 src="/images/linkedin.svg"
+                alt="Linkedin Logo"
                 className={styles.logo}
                 width={23}
                 height={23}
@@ -61,6 +63,7 @@ export default function Home() {
           >
             <Image
                 src="/images/instagram.svg"
+                alt="instagram logo"
                 className={styles.logo}
                 width={23}
                 height={23}
@@ -73,6 +76,7 @@ export default function Home() {
           >
             <Image
                 src="/images/envelope.svg"
+                alt="envelope logo"
                 className={styles.logo}
                 width={23}
                 height={23}
