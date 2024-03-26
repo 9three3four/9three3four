@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className={styles.title}>
           <h1> Chandrakanth Lanka</h1>
-          <h3> DevOps Engineer</h3>
+          <h3> DevOps Engineer | Systems Architect | Data Enthusiast </h3>
         </div>
           <p>
             I am a Senior DevOps Engineer at Ness Digital Engineering with 7 years of experience,
