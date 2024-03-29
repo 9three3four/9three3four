@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/home.module.css";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Head>
         <meta name="description" content="My personal site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title> 9three3four </title>
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
 
@@ -28,61 +30,7 @@ export default function Home() {
             constantly seeking ways to utilize these fields to make a real-world impact.
           </p>
 
-        <div className={styles.footer}>
-          <a
-              href="https://www.github.com/9three3four"
-              target="_blank"
-              rel="noopener noreferrer"
-          >
-            <Image
-                src="/images/github.svg"
-                alt="github logo"
-                className={styles.logo}
-                width={23}
-                height={23}
-            />
-
-          </a>
-          <a
-              href="https://www.linkedin.com/in/9three3four"
-              target="_blank"
-              rel="noopener noreferrer"
-          >
-            <Image
-                src="/images/linkedin.svg"
-                alt="Linkedin Logo"
-                className={styles.logo}
-                width={23}
-                height={23}
-            />
-          </a>
-          <a
-              href="https://www.instagram.com/9three3four"
-              target="_blank"
-              rel="noopener noreferrer"
-          >
-            <Image
-                src="/images/instagram.svg"
-                alt="instagram logo"
-                className={styles.logo}
-                width={23}
-                height={23}
-            />
-          </a>
-          <a
-              href="mailto:lanka.kv@icloud.com"
-              target="_blank"
-              rel="noopener noreferrer"
-          >
-            <Image
-                src="/images/envelope.svg"
-                alt="envelope logo"
-                className={styles.logo}
-                width={23}
-                height={23}
-            />
-          </a>
-        </div>
+        <Footer />
       </main>
     </>
   );
