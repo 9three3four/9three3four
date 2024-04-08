@@ -31,13 +31,6 @@
   font-weight: 400;
 }
 
-.footer {
-  margin: 5px 0 0;
-  display: inline-flex;
-  justify-content: center;
-  gap: 20px;
-}
-
 
 @media (prefers-color-scheme: dark) {
   .logo {

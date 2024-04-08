@@ -3,10 +3,8 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/home.module.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-
 const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Index() {
   return (
     <>
       <div className={`${styles.main} ${inter.className}`}>
