@@ -1,17 +1,36 @@
-import styles from "@/styles/home.module.css";
-import Image from "next/image";
-export default function Header() {
+import Link from "next/link";
+import Head from "next/head";
+import { useRouter } from "next/router";
+import styles from "@/styles/header.module.css";
+
+const navItems= [
+    {label: "Home", page: "/" },
+    {label: "Blog", page: "/blog" },
+    {label: "CV", page: "/cv" },
+]
+
+const Header = ({ titlePre = '' }) => {
+    const { pathname } = useRouter()
     return (
-        <>
-            <div className={styles.header}>
-                 <ul>
-                     <li>
-                         <a href={"/"}>/home</a>
-                         <a href={"/blog"}>/blog</a>
-                         <a href={"/cv"}>/cv</a>
-                     </li>
-                 </ul>
-             </div>
-        </>
+        <header className={styles.header}>
+            <Head>
+                <title>{titlePre ? `$(titlePre} |` : ""} 9three3four</title>
+            </Head>
+            <ul>
+                {navItems.map(({ label, page, link }) => (
+                    <li key={label}>
+                        {page ? (
+                            <Link href={page} className={pathname === page ? 'active' : undefined}>
+                                    {label}
+                            </Link>
+                          ) : (
+                              <ExtLink href={link}>{label}</ExtLink>
+                        )}
+                    </li>
+                ))}
+            </ul>
+        </header>
     )
 }
+
+export default Header

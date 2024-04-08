@@ -15,22 +15,6 @@
   text-align: left;
 }
 
-.header {
-  margin: 5px 0 0;
-  display: inline-flex;
-  justify-content: center;
-}
-
-.header ul {
-  margin: 0;
-  align-items: center;
-}
-
-.ul li {
-  font-size: medium;
-  gap: 20px;
-}
-
 .title {
   text-align: center;
   margin: 15px 0 0;
