@@ -21,12 +21,12 @@ export default function Home() {
           <h3> DevOps Engineer | Systems Architect | Data Enthusiast </h3>
         </div>
           <p>
-            I am a Senior DevOps Engineer at Ness Digital Engineering with 7 years of experience,
+            I am a Principal Engineer at Seanergy Digital with nearly 8 years of experience,
             driven by a passion to leverage technology for positive change.
             I bridge the gap between development and operations, ensuring smooth software delivery.
           </p>
           <p>
-            Beyond the technical realm, I am fascinated by the intersection of data science and economics,
+            Beyond the technical realm, I am fascinated by the intersection of technology and economics,
             constantly seeking ways to utilize these fields to make a real-world impact.
           </p>
 
