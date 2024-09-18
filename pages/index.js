@@ -21,13 +21,11 @@ export default function Home() {
           <h3> DevOps Engineer | Systems Architect </h3>
         </div>
           <p>
-            I am a Principal Engineer at Seanergy Digital with nearly 8 years of experience,
-            driven by a passion to leverage technology for positive change.
-            I bridge the gap between development and operations, ensuring smooth software delivery.
+            I am a Principal DevOps Engineer at Seanergy Digital with close to 8 years of extensive experience in the
+            tech industry. My role focuses on optimizing the collaboration between development and operations teams, ensuring seamless software delivery, and driving technical efficiency.
           </p>
           <p>
-            Beyond the technical realm, I am fascinated by the intersection of technology and economics,
-            constantly seeking ways to utilize these fields to make a real-world impact.
+            Beyond the technical realm, I am deeply interested in the interplay between technology and economics. I am always exploring innovative ways to combine these disciplines to create meaningful, real-world impact, particularly in the areas where technology can drive economic advancement and societal progress.
           </p>
 
         <Footer />
